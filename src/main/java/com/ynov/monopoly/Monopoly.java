@@ -11,12 +11,10 @@ import java.net.Socket;
 
 public class Monopoly {
     private ServerSocket serverSocket;
-    final SocketManager socketManager;
     final CaseManager caseManager;
     final PlayerManager playerManager;
 
     public Monopoly(){
-        this.socketManager = new SocketManager();
         this.caseManager = new CaseManager();
         this.playerManager = new PlayerManager();
     }
